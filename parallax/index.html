@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Without Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="parallax.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="lightbox.min.css">
+    <script rel="script" src="lightbox-plus-jquery.min.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav>
+            <h1 class="brand"><strong>N</strong>azar</h1>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <script rel="script" src="app.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop()){
+                $('nav').addClass('white-back');
+            }
+            else {
+                $('nav').removeClass('white-back');
+            }
+        })
+    </script>
+
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/banner_bg.jpg">
+        <div class="banner-text">
+           <h1> <strong style="color: #F89624">NAZAR</strong> <strong style="color: #33C1CF">HTML5</strong> <strong>Template</strong></h1>
+            <p class="banner-text-info">
+                This is my template, based on layout from internet.
+                There you can see the quality of my work, to decide
+                Do I a nice choice for your project. I'm sure I am!
+            </p>
+            <div class="banner-start"><a href="#">Let's Start!</a></div>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="container container-flex">
+            <div class="about-container">
+            <div class="about-info-block">
+                <div class="about-info-block-main">
+                    <div class="about-icon">
+                <img src="img/service_icon_01.png" class="info-block-icon" alt="">
+                    </div>
+                    <h3>Duis aute irure</h3>
+                </div>
+                <p class="about-info-block-secondary">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="info-block-read-more"><a href="#">CONTINUE READING</a></div>
+            </div>
+            <div class="about-info-block">
+                <div class="about-info-block-main">
+                    <div class="about-icon">
+                <img src="img/service_icon_02.png" class="info-block-icon" alt="">
+                    </div>
+                    <h3>Dolor in reprehenderit</h3>
+                </div>
+                <p class="about-info-block-secondary">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="info-block-read-more"><a href="#">CONTINUE READING</a></div>
+            </div>
+            </div>
+            <div class="about-container">
+            <div class="about-info-block">
+                <div class="about-info-block-main">
+                    <div class="about-icon">
+                <img src="img/service_icon_03.png" class="info-block-icon" alt="">
+                    </div>
+                <h3>Duis aute irure</h3>
+                </div>
+                <p class="about-info-block-secondary">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <div class="info-block-read-more"><a href="#">CONTINUE READING</a></div>
+            </div>
+            <div class="about-info-block">
+                <div class="about-info-block-main">
+                    <div class="about-icon">
+                <img src="img/service_icon_04.png" class="info-block-icon" alt="">
+                    </div>
+                <h3>Excepteur sint occaecat</h3>
+                </div>
+                <p class="about-info-block-secondary">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <div class="info-block-read-more"><a href="#">CONTINUE READING</a></div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <div class="gallery-left">
+            <div class="gallery-right-body">
+                <h2 class="gallery-header">Gallery</h2>
+                <p>
+                    In malesuada placerat ligula et bibendum.
+                    Aenean eget urna enim. Sed enim ante, bibendum nec dictum ac, gravida ac lectus.
+                </p>
+
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="btn" onclick="filterSelection('branding')"> Branding</button>
+                    <button class="btn" onclick="filterSelection('graphic')"> Graphic</button>
+                    <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+                    <button class="btn" onclick="filterSelection('animation')"> Animation</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="gallery-right">
+            <div class="gallery-right-wrapper">
+                <div  class="filterDiv nature"> <a href="img/portfolio_big_item_01.jpg" data-lightbox="myGallery"><img src="img/portfolio_item_01.jpg" alt="" class="gallery-right-image"></a></div>
+                <div class="filterDiv animation"> <a href="img/portfolio_big_item_02.jpg" data-lightbox="myGallery"><img src="img/portfolio_item_02.jpg" alt="" class="gallery-right-image"></a></div>
+                <div class="filterDiv branding"> <a href="img/portfolio_big_item_03.jpg" data-lightbox="myGallery"><img src="img/portfolio_item_03.jpg" alt="" class="gallery-right-image"></a></div>
+                <div  class="filterDiv  graphic nature"> <a href="img/portfolio_big_item_04.jpg" data-lightbox="myGallery"><img src="img/portfolio_item_04.jpg" alt="" class="gallery-right-image"></a></div>
+                <div  class="filterDiv branding"> <a href="img/portfolio_big_item_05.jpg" data-lightbox="myGallery"><img src="img/portfolio_item_05.jpg" alt="" class="gallery-right-image"></a></div>
+                <div  class="filterDiv graphic animation"> <a href="img/portfolio_big_item_06.jpg" data-lightbox="myGallery"><img src="img/portfolio_item_06.jpg" alt="" class="gallery-right-image"></a></div>
+            </div>
+        </div>
+        <script rel="script" src="filtering.js"></script>
+    </div>
+
+    <div class="push">
+    </div>
+    <footer class="footer">
+        <h3>Nazar Khrishchuk</h3>
+        <p>2020</p>
+    </footer>
+</body>
+</html>
